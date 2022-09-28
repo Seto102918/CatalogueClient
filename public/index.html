@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Catalogue For D'sista Luxury based in Tangerang" />
+	<meta name="theme-color" content="#51504c">
+
+	<link rel="manifest" href="/manifest.json">
+	<link rel="icon" href="./logo.svg" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<title>D'sista Luxury Catalogue</title>
+
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script> 
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			/* font-family: 'Montserrat', sans-serif; */
+			margin-block-start: 0;
+			margin-block-end: 0;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			overflow-x: hidden;
+			/* outline: dashed red; */
+		}
+
+		body {
+			margin: 0;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			min-height: 100vh;
+			background-color: #a5947a !important; 
+			background-image: url('./content/background.webp');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		h1, h2, h3, h4, h5, h6, p, span {
+			overflow: hidden;
+		}
+
+		.background,.module {
+			background-repeat: no-repeat;
+			background-size: cover
+		}
+
+		.loader {
+			-webkit-animation: spin 1s linear infinite;
+			animation: spin 1s ease-in-out infinite;
+			background-color: #fff;
+			border-radius: 50%;
+			height: 1rem;
+			margin-inline:.5rem;width: 1rem
+		}
+
+		.loaderParent div:first-child {
+			-webkit-animation-delay: 0s;
+			animation-delay: 0s
+		}
+		.loaderParent div:nth-child(2) {
+			-webkit-animation-delay: .3s;
+			animation-delay: .3s
+		}
+		.loaderParent div:nth-child(3) {
+			-webkit-animation-delay: .6s;
+			animation-delay: .6s
+		}
+
+		.scaleOnActive, .scaleOnHover {
+			transition: 0.2s;
+			transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+			will-change: transform;
+  			transform: translateZ(0);
+		}
+
+		@media screen and (min-width: 992px) {
+			.scaleOnHover:hover{
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+				z-index: 11;
+			}
+		}
+
+		@supports ((-webkit-backdrop-filter: blur(2px)) or (backdrop-filter:blur(2px))) {
+			.backdrop_blur {
+				-webkit-backdrop-filter:blur(2px);
+				backdrop-filter: blur(2px)
+			}
+		}
+	</style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/scripts/bundle.js"></script>
+</body>
+
+</html>

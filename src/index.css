@@ -1,0 +1,96 @@
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.imageWZoom>div {
+  background-position: bottom 0px center;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+}
+
+@supports (backdrop-filter: blur(2px)) {
+  .carousel__zoom-image-overlay--hovering {
+    backdrop-filter: brightness(20%) saturate(0%);
+  }
+}
+
+.module {
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, .25);
+  position: relative;
+  transition: .2s
+}
+
+.gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-image: linear-gradient(transparent, #21252953, #212529a4);
+  height: 20%;
+  z-index: 1;
+  opacity: 0.7;
+  width: 100%;
+}
+
+@keyframes spin {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes arrowRight {
+
+  0%,
+  100% {
+    transform: translateX(5%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+.scaleOnActive:active {
+  transform: scale(1.05);
+}
+
+.boxshadow {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttonRight:hover {
+  animation: arrowRight 2s infinite;
+}
+
+.Afterblack::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+img{
+  color: transparent; 
+}

@@ -1,0 +1,15 @@
+{
+    "short_name": "Dlux Catalogue",
+    "name": "D'sista Luxury Catalogue",
+    "icons": [
+      {
+        "src": "logo.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#51504c",
+    "background_color": "#a5947a"
+  }
