@@ -11,7 +11,7 @@ firebase-debug.*.log*
 .firebase/
 webpack.server.config.js
 index.js
-.build
+.build/
 
 # Firebase config
 
