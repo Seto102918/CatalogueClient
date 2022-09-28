@@ -1,3 +1,7 @@
+webpack.server.config.js
+index.js
+.build/
+
 # Logs
 logs
 *.log
@@ -9,9 +13,7 @@ firebase-debug.*.log*
 
 # Firebase cache
 .firebase/
-webpack.server.config.js
-index.js
-.build/
+
 
 # Firebase config
 
