@@ -6,4 +6,4 @@ Bagian frontend ini dibuat dengan ReactJS dan bertujuan sebagai katalog yang men
 # Teknologi yang dipakai
   - HTML/CSS
   - Javascript
-    -ReactJs
+    - ReactJs
