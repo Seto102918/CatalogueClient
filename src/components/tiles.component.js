@@ -11,13 +11,12 @@ const ListItems = props => {
                 style={{
                     aspectRatio: '3/4'
                 }}>
-                    {!props.gaun._id === "..." ? 
+                    {props.gaun._id === "..." ? '' :
                     <img width={'100%'}
                     height={'100%'}
                     src={`https://firebasestorage.googleapis.com/v0/b/fotobridal-83326.appspot.com/o/${props.gaun.kode}%2F${props.gaun.kode}_preview.webp?alt=media`}
                     loading="lazy" alt={'Gaun ' + props.gaun.kode}/>
-                    :
-                    ''
+                    
                     }
                     {/* <LazyLoadImage
                         style={{
